@@ -1,37 +1,20 @@
-import { DarkModeToggle, NavigationDrawer } from "@alextheman/components";
 import { Route, Routes } from "react-router-dom";
-import AboutPage from "src/pages/AboutPage";
+import Homepage from "src/pages/Homepage";
+import ComponentsTemplate from "src/pages/components/ComponentsTemplate";
+import DropdownMenuPage from "src/pages/components/DropdownMenuPage";
+import InstallationPage from "src/pages/getting-started/InstallationPage";
 
 function App() {
   return (
-    <NavigationDrawer
-      title="Alex's Components Library"
-      navItems={[
-        {
-          category: "Home",
-          options: [
-            {
-              label: "Homepage",
-              to: "/",
-            },
-          ],
-        },
-        {
-          category: "Components",
-          options: [
-            {
-              label: "DropdownMenu",
-              to: "/components/dropdown-menu",
-            },
-          ],
-        },
-      ]}
-      headerElements={<DarkModeToggle />}
-    >
+    <>
       <Routes>
-        <Route path="/" element={<AboutPage />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/components" element={<ComponentsTemplate />}>
+          <Route path="dropdown-menu" element={<DropdownMenuPage />} />
+          <Route path="install" element={<InstallationPage />} />
+        </Route>
       </Routes>
-    </NavigationDrawer>
+    </>
   );
 }
 
