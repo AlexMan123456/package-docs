@@ -2,7 +2,7 @@ import { DarkModeToggle, NavigationDrawer } from "@alextheman/components";
 import IconButton from "@mui/material/IconButton";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
-import AboutPage from "src/pages/getting-started/AboutPage";
+import AboutPage from "src/pages/components/getting-started/AboutPage";
 import Tooltip from "@mui/material/Tooltip";
 
 function ComponentsTemplate() {
@@ -20,7 +20,7 @@ function ComponentsTemplate() {
             },
             {
               label: "Installation",
-              to: "/components/install",
+              to: "/components/installation",
             },
           ],
         },
