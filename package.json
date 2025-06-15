@@ -9,8 +9,7 @@
     "format": "npx prettier 'src/**/*.{ts,tsx}' --write",
     "lint": "npx eslint . --ext .ts,.tsx --fix && npx prettier --check --parser typescript 'src/**/*.{ts,tsx}'",
     "preview": "vite preview",
-    "prepare": "husky",
-    "postinstall": "patch-package"
+    "prepare": "husky"
   },
   "dependencies": {
     "@alextheman/components": "^2.5.2",
