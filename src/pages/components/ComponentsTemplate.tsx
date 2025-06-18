@@ -31,6 +31,10 @@ function ComponentsTemplate() {
               label: "DropdownMenu",
               to: "/components/dropdown-menu",
             },
+            {
+              label: "Playground",
+              to: "/components/playground",
+            },
           ],
         },
       ]}
