@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 
 function PlaygroundPage() {
   return (
-    <section>
+    <main>
       <h1>Playground</h1>
       <Markdown>
         The Playground component is useful for live code examples. In fact, this
@@ -21,6 +21,11 @@ function PlaygroundPage() {
         scope={{ Playground }}
       />
       <br />
+      <Markdown>
+        This will provide you with an interactive textbox where you can input
+        any valid piece of JSX or TSX code, and see the results of it get
+        rendered as you go. The code you pass in is the initial value.
+      </Markdown>
       <Markdown>
         Please note that in order for this to work, the code property must be
         *JSX* or *TSX*, rather than pure JavaScript/TypeScript. Anything that
@@ -66,7 +71,7 @@ function PlaygroundPage() {
         I know, triply nesting a playground component like that is VERY cursed
         and it's not what you'd usually do in practice, but you get the idea.
       </Markdown>
-    </section>
+    </main>
   );
 }
 
