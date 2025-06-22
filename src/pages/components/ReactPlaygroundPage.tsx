@@ -1,4 +1,4 @@
-import { ReactPlayground } from "@alextheman/components";
+import { ExternalLink, ReactPlayground } from "@alextheman/components";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
@@ -18,10 +18,18 @@ function PlaygroundPage() {
         this is the very component that I'm using to showcase all the examples
         throughout this site!
       </Markdown>
-      <Markdown>
-        This component uses React Live's live provider components, but packages
-        them together into a single component for ease of use. To use it, pass
-        in a valid JSX or TSX string into the code property.
+      <Markdown
+        components={{
+          a: ({ href, children }) => {
+            return <ExternalLink href={href ?? ""}>{children}</ExternalLink>;
+          },
+        }}
+      >
+        This component uses [React
+        Live](https://nearform.com/open-source/react-live/)'s live provider
+        components, but packages them together into a single component for ease
+        of use. To use it, pass in a valid JSX or TSX string into the code
+        property.
       </Markdown>
       <br />
       <ReactPlayground
