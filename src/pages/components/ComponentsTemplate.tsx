@@ -35,6 +35,14 @@ function ComponentsTemplate() {
               label: "ReactPlayground",
               to: "/components/react-playground",
             },
+            {
+              label: "InternalLink",
+              to: "/components/internal-link",
+            },
+            {
+              label: "ExternalLink",
+              to: "/components/external-link",
+            },
           ],
         },
       ]}
