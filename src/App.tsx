@@ -13,7 +13,7 @@ function App() {
         <Route path="/components" element={<ComponentsTemplate />}>
           <Route path="dropdown-menu" element={<DropdownMenuPage />} />
           <Route path="installation" element={<InstallationPage />} />
-          <Route path="playground" element={<PlaygroundPage />} />
+          <Route path="react-playground" element={<PlaygroundPage />} />
         </Route>
       </Routes>
     </>

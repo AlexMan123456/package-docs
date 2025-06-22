@@ -32,8 +32,8 @@ function ComponentsTemplate() {
               to: "/components/dropdown-menu",
             },
             {
-              label: "Playground",
-              to: "/components/playground",
+              label: "ReactPlayground",
+              to: "/components/react-playground",
             },
           ],
         },
