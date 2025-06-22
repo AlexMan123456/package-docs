@@ -35,6 +35,7 @@ function PlaygroundPage() {
       <ReactPlayground
         code={`<ReactPlayground code={"<p>Hello World</p>"} />`}
         scope={{ ReactPlayground }}
+        previewStyles={{ border: 0, backgroundColor: null }}
       />
       <br />
       <Markdown>
@@ -64,6 +65,7 @@ function PlaygroundPage() {
                     />
                     `}
         scope={{ ReactPlayground }}
+        previewStyles={{ border: 0, backgroundColor: null }}
       />
       <br />
       <Markdown>
@@ -83,6 +85,7 @@ function PlaygroundPage() {
                     />
                     `}
         scope={{ ReactPlayground, sayHello, myName }}
+        previewStyles={{ border: 0, backgroundColor: null }}
       />
       <br />
       <Markdown>
@@ -154,6 +157,7 @@ function PlaygroundPage() {
           Typography,
           Button,
         }}
+        previewStyles={{ border: 0, backgroundColor: null }}
       />
       <br />
       <Markdown>
@@ -165,11 +169,13 @@ function PlaygroundPage() {
         <ReactPlayground
             code={"<p>Hello World</p>"}
             previewStyles={{
-              color: "green"
+              color: "green",
+              border: 0
             }}
         />
         `}
         scope={{ ReactPlayground }}
+        previewStyles={{ border: 0, backgroundColor: null }}
       />
       <br />
       <Markdown>
@@ -185,9 +191,17 @@ function PlaygroundPage() {
                     <ReactPlayground
                         code={"<ReactPlayground code={\\"<p>Hello World</p>\\"} />"}
                         scope={{ ReactPlayground }}
+                        previewStyles={{
+                          border: 0,
+                          backgroundColor: null
+                        }}
                     />
                     `}
         scope={{ ReactPlayground }}
+        previewStyles={{
+          border: 0,
+          backgroundColor: null,
+        }}
       />
       <br />
       <Markdown>
