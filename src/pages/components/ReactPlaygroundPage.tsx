@@ -110,12 +110,14 @@ function PlaygroundPage() {
                     <TextField
                       label="First number"
                       value={firstNumber}
+                      type="number"
                       onChange={(event) => {setFirstNumber(event.target.value)}}
                     />
                     +
                     <TextField
                       label="Second number"
                       value={secondNumber}
+                      type="number"
                       onChange={(event) => {setSecondNumber(event.target.value)}}
                     />
                     <Typography>
