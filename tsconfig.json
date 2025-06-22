@@ -23,5 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "declaration": true,
   },
-  "include": ["src", "types", "index.d.ts", "types/global-jsx.d.ts"]
+  "include": ["src", "types", "index.d.ts", "types/global-jsx.d.ts"],
+  "exclude": ["node_modules"]
 }

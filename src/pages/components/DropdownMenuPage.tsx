@@ -1,4 +1,4 @@
-import { DropdownMenu, Playground } from "@alextheman/components";
+import { DropdownMenu, ReactPlayground } from "@alextheman/components";
 import { MenuItem } from "@mui/material";
 import ReactMarkdown from "react-markdown";
 
@@ -12,7 +12,7 @@ function DropdownMenuPage() {
         component and pass in some `MenuItem` components from Material UI as
         children, as follows:
       </ReactMarkdown>
-      <Playground
+      <ReactPlayground
         code={`
                     <DropdownMenu>
                         <MenuItem>Item 1</MenuItem>
@@ -26,7 +26,7 @@ function DropdownMenuPage() {
         can pass in a function as the children, which has an argument
         `closeMenu`, which you can call to close the menu.
       </ReactMarkdown>
-      <Playground
+      <ReactPlayground
         code={`
                 <DropdownMenu>
                 {(closeMenu) => {
