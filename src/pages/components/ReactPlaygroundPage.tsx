@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 
-function PlaygroundPage() {
+function ReactPlaygroundPage() {
   function sayHello(name: string): string {
     return `Hello, ${name}`;
   }
@@ -212,4 +212,4 @@ function PlaygroundPage() {
   );
 }
 
-export default PlaygroundPage;
+export default ReactPlaygroundPage;
