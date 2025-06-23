@@ -28,6 +28,10 @@ function ComponentsTemplate() {
           category: "Components",
           options: [
             {
+              label: "DarkModeToggle",
+              to: "/components/dark-mode-toggle",
+            },
+            {
               label: "DropdownMenu",
               to: "/components/dropdown-menu",
             },
