@@ -13,6 +13,24 @@ function DarkModeTogglePage() {
       </Markdown>
       <br />
       <ReactPlayground code={"<DarkModeToggle />"} scope={{ DarkModeToggle }} />
+      <br />
+      <Markdown>
+        Please note that in order to use this component, it must be wrapped
+        inside a `ModeProvider`, like so:
+      </Markdown>
+      <br />
+      <Markdown>
+        {`
+          <ModeProvider>
+            <DarkModeToggle />
+          </ModeProvider>
+        `}
+      </Markdown>
+      <br />
+      <Markdown>
+        This provides the theme context to the overall app. If you don't include
+        this, this button will have no effect on the app.
+      </Markdown>
     </main>
   );
 }
