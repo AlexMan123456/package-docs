@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "useDefineForClassFields": true, 
+    "useDefineForClassFields": true,
     "lib": ["ES2024", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
@@ -21,7 +21,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "declaration": true,
+    "declaration": true
   },
   "include": ["src", "types", "index.d.ts", "types/global-jsx.d.ts"],
   "exclude": ["node_modules"]
