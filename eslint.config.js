@@ -32,21 +32,35 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
       "react-hooks/exhaustive-deps": "off",
-      "import/no-unresolved": "error",
-      "eqeqeq": "error",
+      "import/no-unresolved": process.env.ESLINT_MODE === "format" ? "warn" : "error",
+      "eqeqeq": process.env.ESLINT_MODE === "format" ? "warn" : "error",
       "no-console": "warn",
       "no-restricted-imports": [
-        "error",
+        process.env.ESLINT_MODE === "format" ? "warn" : "error",
         {
+          paths: [
+            {
+              name: "@mui/material",
+              message: "Please use `import Component from \"@mui/material/Component\"` instead. See https://mui.com/material-ui/guides/minimizing-bundle-size/ for more information"
+            }
+          ],
           patterns: [
             {
               group: [
                 "./",
                 "../"
               ],
-              message: "Relative imports are not allowed."
+              message: "Relative imports are not allowed"
             }
           ]
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": [
+        process.env.ESLINT_MODE === "format" ? "warn" : "error",
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_",
+          "caughtErrorsIgnorePattern": "^_"
         }
       ]
     },

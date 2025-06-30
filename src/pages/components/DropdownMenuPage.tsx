@@ -1,5 +1,5 @@
 import { DropdownMenu, ReactPlayground } from "@alextheman/components";
-import { MenuItem } from "@mui/material";
+import MenuItem from "@mui/material/MenuItem";
 import ReactMarkdown from "react-markdown";
 
 function DropdownMenuPage() {
