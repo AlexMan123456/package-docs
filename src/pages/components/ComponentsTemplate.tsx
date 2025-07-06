@@ -49,6 +49,15 @@ function ComponentsTemplate() {
             },
           ],
         },
+        {
+          category: "Contexts",
+          options: [
+            {
+              label: "ScreenSizeContext",
+              to: "/components/contexts/screen-size-context",
+            },
+          ],
+        },
       ]}
       headerElements={
         <>
