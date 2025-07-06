@@ -7,6 +7,7 @@ import DropdownMenuPage from "src/pages/components/DropdownMenuPage";
 import ExternalLinkPage from "src/pages/components/ExternalLinkPage";
 import InternalLinkPage from "src/pages/components/InternalLinkPage";
 import ReactPlaygroundPage from "src/pages/components/ReactPlaygroundPage";
+import ScreenSizeContextPage from "src/pages/components/ScreenSizeContextPage";
 import InstallationPage from "src/pages/components/getting-started/InstallationPage";
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
           <Route path="external-link" element={<ExternalLinkPage />} />
           <Route path="you-may-not-enter" element={<Rickroll />} />
           <Route path="dark-mode-toggle" element={<DarkModeTogglePage />} />
+          <Route
+            path="contexts/screen-size-context"
+            element={<ScreenSizeContextPage />}
+          />
         </Route>
       </Routes>
     </>
