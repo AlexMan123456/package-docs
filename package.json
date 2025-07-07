@@ -12,7 +12,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@alextheman/components": "^3.0.5",
+    "@alextheman/components": "^3.1.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.1.1",
