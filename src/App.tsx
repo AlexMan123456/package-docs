@@ -5,6 +5,7 @@ import ComponentsTemplate from "src/pages/components/ComponentsTemplate";
 import DarkModeTogglePage from "src/pages/components/DarkModeTogglePage";
 import DropdownMenuPage from "src/pages/components/DropdownMenuPage";
 import ExternalLinkPage from "src/pages/components/ExternalLinkPage";
+import IconWithPopoverPage from "src/pages/components/IconWithPopoverPage";
 import InternalLinkPage from "src/pages/components/InternalLinkPage";
 import ReactPlaygroundPage from "src/pages/components/ReactPlaygroundPage";
 import ScreenSizeContextPage from "src/pages/components/ScreenSizeContextPage";
@@ -24,6 +25,7 @@ function App() {
           <Route path="external-link" element={<ExternalLinkPage />} />
           <Route path="you-may-not-enter" element={<Rickroll />} />
           <Route path="dark-mode-toggle" element={<DarkModeTogglePage />} />
+          <Route path="icon-with-popover" element={<IconWithPopoverPage />} />
           <Route
             path="contexts/screen-size-context"
             element={<ScreenSizeContextPage />}

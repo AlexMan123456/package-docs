@@ -47,6 +47,10 @@ function ComponentsTemplate() {
               label: "ExternalLink",
               to: "/components/external-link",
             },
+            {
+              label: "IconWithPopover",
+              to: "/components/icon-with-popover",
+            },
           ],
         },
         {
