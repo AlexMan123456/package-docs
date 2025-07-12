@@ -3,7 +3,12 @@ import { ExternalLink, InternalLink } from "@alextheman/components";
 function AboutPage() {
   return (
     <section>
-      <h1>About @alextheman/components</h1>
+      <h1>
+        About{" "}
+        <ExternalLink href={"https://github.com/AlexMan123456/components"}>
+          @alextheman/components
+        </ExternalLink>
+      </h1>
       <p>
         This is a components library created by me,{" "}
         <ExternalLink href="https://github.com/AlexMan123456">
