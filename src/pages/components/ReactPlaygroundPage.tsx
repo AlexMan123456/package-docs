@@ -71,7 +71,9 @@ function ReactPlaygroundPage() {
       <Markdown>
         {"In general, you probably wouldn't always pass the scope properties in like that. It's more common to instead have the functions and varables declared elsewhere in your code:\n" +
           "```\n" +
-          `${sayHello.toString()}\n` +
+          `function sayHello(name: string): string {
+  return \`Hello, \${name}\`;
+}\n` +
           'const myName = "Alex"\n' +
           "```\n" +
           "and then pass them directly into scope, like so:"}
