@@ -53,7 +53,6 @@ function DropdownMenuPage() {
 
           useEffect(() => {
             setMessage(\`DropdownMenu is currently \${isOpen ? "open" : "closed"}.\`);
-            console.log(isOpen)
           }, [isOpen]);
 
           return (
