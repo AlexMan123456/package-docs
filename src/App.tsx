@@ -27,13 +27,11 @@ function App() {
         <Route path="you-may-not-enter" element={<Rickroll />} />
         <Route path="dark-mode-toggle" element={<DarkModeTogglePage />} />
         <Route path="icon-with-popover" element={<IconWithPopoverPage />} />
-        <Route
-          path="contexts/screen-size-context"
-          element={<ScreenSizeContextPage />}
-        />
+        <Route path="contexts/screen-size-context" element={<ScreenSizeContextPage />} />
       </Route>
 
       <Route path="/eslint-plugin" element={<ESLintPluginMainPage />}>
+        <Route path="installation" />
         <Route path="no-namespace-imports" />
         <Route path="no-relative-imports" />
       </Route>

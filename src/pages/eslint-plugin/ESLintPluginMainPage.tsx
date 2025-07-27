@@ -1,8 +1,4 @@
-import {
-  DarkModeToggle,
-  InternalLink,
-  NavigationDrawer,
-} from "@alextheman/components";
+import { DarkModeToggle, InternalLink, NavigationDrawer } from "@alextheman/components";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import HomeIcon from "@mui/icons-material/Home";

@@ -13,7 +13,7 @@
     "update-dependencies": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
-    "@alextheman/components": "^3.3.1",
+    "@alextheman/components": "^3.3.3",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.2.0",
@@ -26,7 +26,7 @@
     "react-router-dom": "^7.7.1"
   },
   "devDependencies": {
-    "@alextheman/eslint-plugin": "^1.2.3",
+    "@alextheman/eslint-plugin": "^1.2.8",
     "@eslint/js": "^9.32.0",
     "@types/common-tags": "^1.8.4",
     "@types/node": "^24.1.0",

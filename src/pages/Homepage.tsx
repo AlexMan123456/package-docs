@@ -8,13 +8,9 @@ function Homepage() {
       <h1>Welcome to the documentation for AlexTheMan's packages</h1>
       <p>Click on one of the items below to go to the corresponding page:</p>
       <List>
-        <ListItemInternalLink to="/components">
-          @alextheman/components
-        </ListItemInternalLink>
+        <ListItemInternalLink to="/components">@alextheman/components</ListItemInternalLink>
         <ListItemButton>@alextheman/utility</ListItemButton>
-        <ListItemInternalLink to="/eslint-plugin">
-          @alextheman/eslint-plugin
-        </ListItemInternalLink>
+        <ListItemInternalLink to="/eslint-plugin">@alextheman/eslint-plugin</ListItemInternalLink>
         <ListItemButton>Dropcore</ListItemButton>
       </List>
     </section>

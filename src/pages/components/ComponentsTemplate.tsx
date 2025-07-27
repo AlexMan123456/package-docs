@@ -66,11 +66,7 @@ function ComponentsTemplate() {
       headerElements={
         <>
           <Tooltip title="Return to homepage">
-            <IconButton
-              component={Link}
-              to="/"
-              sx={{ display: "flex", justifySelf: "center" }}
-            >
+            <IconButton component={Link} to="/" sx={{ display: "flex", justifySelf: "center" }}>
               <HomeIcon />
             </IconButton>
           </Tooltip>

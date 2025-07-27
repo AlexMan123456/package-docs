@@ -1,8 +1,4 @@
-import {
-  ExternalLink,
-  InternalLink,
-  ReactPlayground,
-} from "@alextheman/components";
+import { ExternalLink, InternalLink, ReactPlayground } from "@alextheman/components";
 import Markdown from "react-markdown";
 
 function InternalLinkPage() {
@@ -15,8 +11,7 @@ function InternalLinkPage() {
         }
       </Markdown>
       <Markdown>
-        The use case is very simple. Just pass in the `to` property and you'll
-        be good to go.
+        The use case is very simple. Just pass in the `to` property and you'll be good to go.
       </Markdown>
       <br />
       <ReactPlayground
@@ -29,9 +24,8 @@ function InternalLinkPage() {
       />
       <br />
       <Markdown>
-        Please note that this is for **Internal Links only**. External href
-        links are not supported with this component. You can try, but nothing
-        will happen if you click the link.
+        Please note that this is for **Internal Links only**. External href links are not supported
+        with this component. You can try, but nothing will happen if you click the link.
       </Markdown>
       <br />
       <ReactPlayground
@@ -50,8 +44,8 @@ function InternalLinkPage() {
           },
         }}
       >
-        If you do want to use an external link with the same styling, please use
-        the [ExternalLink](/components/external-link) component instead
+        If you do want to use an external link with the same styling, please use the
+        [ExternalLink](/components/external-link) component instead
       </Markdown>
     </main>
   );
