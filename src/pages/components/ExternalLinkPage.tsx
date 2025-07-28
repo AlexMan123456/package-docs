@@ -1,8 +1,4 @@
-import {
-  ExternalLink,
-  InternalLink,
-  ReactPlayground,
-} from "@alextheman/components";
+import { ExternalLink, InternalLink, ReactPlayground } from "@alextheman/components";
 import Markdown from "react-markdown";
 
 function ExternalLinkPage() {
@@ -10,12 +6,11 @@ function ExternalLinkPage() {
     <main>
       <h1>ExternalLink</h1>
       <Markdown>
-        The `ExternalLink` component combines the styling of the Material UI
-        Link component with the functionality of a regular anchor tag. Similarly
-        to `InternalLink`, it saves you from constantly having to keep passing
-        in the component every time, but the difference here is that this is to
-        be used for **External links only**. That is, links that navigate away
-        from the main page.
+        The `ExternalLink` component combines the styling of the Material UI Link component with the
+        functionality of a regular anchor tag. Similarly to `InternalLink`, it saves you from
+        constantly having to keep passing in the component every time, but the difference here is
+        that this is to be used for **External links only**. That is, links that navigate away from
+        the main page.
       </Markdown>
       <br />
       <ReactPlayground
@@ -28,8 +23,8 @@ function ExternalLinkPage() {
       />
       <br />
       <Markdown>
-        Please note that internal links are not supported with this component.
-        You can try, but nothing will happen if you click the link.
+        Please note that internal links are not supported with this component. You can try, but
+        nothing will happen if you click the link.
       </Markdown>
       <br />
       <ReactPlayground
@@ -48,8 +43,8 @@ function ExternalLinkPage() {
           },
         }}
       >
-        If you do want to use an external link with the same styling, please use
-        the [InternalLink](/components/internal-link) component instead
+        If you do want to use an external link with the same styling, please use the
+        [InternalLink](/components/internal-link) component instead
       </Markdown>
     </main>
   );

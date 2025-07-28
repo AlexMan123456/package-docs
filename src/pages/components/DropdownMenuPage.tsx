@@ -9,10 +9,9 @@ function DropdownMenuPage() {
     <main style={{ marginBottom: "2px" }}>
       <h1>DropdownMenu</h1>
       <Markdown>
-        The `DropdownMenu` component provides a simple dropdown that you can use
-        in place of Material UI's `Menu` component. To use it, call the
-        component and pass in some `MenuItem` components from Material UI as
-        children, as follows:
+        The `DropdownMenu` component provides a simple dropdown that you can use in place of
+        Material UI's `Menu` component. To use it, call the component and pass in some `MenuItem`
+        components from Material UI as children, as follows:
       </Markdown>
       <ReactPlayground
         code={`
@@ -24,9 +23,9 @@ function DropdownMenuPage() {
         scope={{ DropdownMenu, MenuItem }}
       />
       <Markdown>
-        Should you need one of the `MenuItem` components to close the menu, you
-        can pass in a function as the children, which has an argument
-        `closeMenu`, which you can call to close the menu.
+        Should you need one of the `MenuItem` components to close the menu, you can pass in a
+        function as the children, which has an argument `closeMenu`, which you can call to close the
+        menu.
       </Markdown>
       <ReactPlayground
         code={`
@@ -42,8 +41,8 @@ function DropdownMenuPage() {
         scope={{ DropdownMenu, MenuItem }}
       />
       <Markdown>
-        You can also pass in `onOpen` and `onClose` props that run the given
-        function when the menu is opened/closed.
+        You can also pass in `onOpen` and `onClose` props that run the given function when the menu
+        is opened/closed.
       </Markdown>
       <ReactPlayground
         code={`

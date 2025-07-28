@@ -14,9 +14,8 @@ function ReactPlaygroundPage() {
     <main>
       <h1>ReactPlayground</h1>
       <Markdown>
-        The ReactPlayground component is useful for live code examples. In fact,
-        this is the very component that I'm using to showcase all the examples
-        throughout this site!
+        The ReactPlayground component is useful for live code examples. In fact, this is the very
+        component that I'm using to showcase all the examples throughout this site!
       </Markdown>
       <Markdown
         components={{
@@ -25,11 +24,9 @@ function ReactPlaygroundPage() {
           },
         }}
       >
-        This component uses [React
-        Live](https://nearform.com/open-source/react-live/)'s live provider
-        components, but packages them together into a single component for ease
-        of use. To use it, pass in a valid JSX or TSX string into the code
-        property.
+        This component uses [React Live](https://nearform.com/open-source/react-live/)'s live
+        provider components, but packages them together into a single component for ease of use. To
+        use it, pass in a valid JSX or TSX string into the code property.
       </Markdown>
       <br />
       <ReactPlayground
@@ -39,19 +36,17 @@ function ReactPlaygroundPage() {
       />
       <br />
       <Markdown>
-        This will provide you with an interactive textbox where you can input
-        any valid piece of JSX or TSX code, and see the results of it get
-        rendered as you go. The code you pass in is the initial value.
+        This will provide you with an interactive textbox where you can input any valid piece of JSX
+        or TSX code, and see the results of it get rendered as you go. The code you pass in is the
+        initial value.
       </Markdown>
       <Markdown>
-        Please note that in order for this to work, the code property must be
-        *JSX* or *TSX*, rather than pure JavaScript/TypeScript. Anything that
-        you can do in the return of a React component is allowed, but regular
-        JavaScript will not work.
+        Please note that in order for this to work, the code property must be *JSX* or *TSX*, rather
+        than pure JavaScript/TypeScript. Anything that you can do in the return of a React component
+        is allowed, but regular JavaScript will not work.
       </Markdown>
       <Markdown>
-        To use this with your own functions and variables, pass them into the
-        scope prop, like so:
+        To use this with your own functions and variables, pass them into the scope prop, like so:
       </Markdown>
       <br />
       <ReactPlayground
@@ -91,11 +86,10 @@ function ReactPlaygroundPage() {
       />
       <br />
       <Markdown>
-        If you want to pass in more than just JSX or TSX, you can use the
-        noInline prop, and then from the playground itself, call the `render()`
-        function to decide which component to render. For example, if you
-        actually want to include that external function in the example itself,
-        or even if you want to use a hook like useState.
+        If you want to pass in more than just JSX or TSX, you can use the noInline prop, and then
+        from the playground itself, call the `render()` function to decide which component to
+        render. For example, if you actually want to include that external function in the example
+        itself, or even if you want to use a hook like useState.
       </Markdown>
       <br />
       <ReactPlayground
@@ -162,9 +156,7 @@ function ReactPlaygroundPage() {
         previewStyles={{ border: 0, backgroundColor: null }}
       />
       <br />
-      <Markdown>
-        You can customise the display of the live preview should you want to:
-      </Markdown>
+      <Markdown>You can customise the display of the live preview should you want to:</Markdown>
       <br />
       <ReactPlayground
         code={`
@@ -181,11 +173,10 @@ function ReactPlaygroundPage() {
       />
       <br />
       <Markdown>
-        Making all these examples was absolutely nuts, by the way, because as
-        you can see, I had to put a Playground inside of a Playground. Just to
-        give you a taste, here's what a Playground nested inside a Playground
-        really looks like, but also bear in mind I had to triply-nest this
-        Playground just to let you see how cursed it really goes!
+        Making all these examples was absolutely nuts, by the way, because as you can see, I had to
+        put a Playground inside of a Playground. Just to give you a taste, here's what a Playground
+        nested inside a Playground really looks like, but also bear in mind I had to triply-nest
+        this Playground just to let you see how cursed it really goes!
       </Markdown>
       <br />
       <ReactPlayground
@@ -207,8 +198,8 @@ function ReactPlaygroundPage() {
       />
       <br />
       <Markdown>
-        I know, triply nesting a playground component like that is VERY cursed
-        and it's not what you'd usually do in practice, but you get the idea.
+        I know, triply nesting a playground component like that is VERY cursed and it's not what
+        you'd usually do in practice, but you get the idea.
       </Markdown>
     </main>
   );
