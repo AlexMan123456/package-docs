@@ -3,9 +3,11 @@ import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import HomeIcon from "@mui/icons-material/Home";
 import AboutPage from "src/pages/eslint-plugin/AboutPage";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 function ESLintPluginMainPage() {
+  const location = useLocation();
+
   return (
     <NavigationDrawer
       title="@alextheman/eslint-plugin"

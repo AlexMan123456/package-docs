@@ -10,7 +10,8 @@ import IconWithPopoverPage from "src/pages/components/IconWithPopoverPage";
 import InternalLinkPage from "src/pages/components/InternalLinkPage";
 import ReactPlaygroundPage from "src/pages/components/ReactPlaygroundPage";
 import ScreenSizeContextPage from "src/pages/components/ScreenSizeContextPage";
-import InstallationPage from "src/pages/components/getting-started/InstallationPage";
+import InstallationPageComponents from "src/pages/components/getting-started/InstallationPage";
+import InstallationPageESLintPlugin from "src/pages/eslint-plugin/InstallationPage";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
 
       <Route path="/components" element={<ComponentsTemplate />}>
         <Route path="dropdown-menu" element={<DropdownMenuPage />} />
-        <Route path="installation" element={<InstallationPage />} />
+        <Route path="installation" element={<InstallationPageComponents />} />
         <Route path="react-playground" element={<ReactPlaygroundPage />} />
         <Route path="internal-link" element={<InternalLinkPage />} />
         <Route path="internal-link/test" element={<InternalLinkPage />} />
@@ -31,7 +32,7 @@ function App() {
       </Route>
 
       <Route path="/eslint-plugin" element={<ESLintPluginMainPage />}>
-        <Route path="installation" />
+        <Route path="installation" element={<InstallationPageESLintPlugin />} />
         <Route path="no-namespace-imports" />
         <Route path="no-relative-imports" />
       </Route>
