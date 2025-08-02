@@ -2,7 +2,7 @@ import { ExternalLink, InternalLink } from "@alextheman/components";
 
 function AboutPage() {
   return (
-    <section>
+    <main>
       <h1>
         About{" "}
         <ExternalLink href={"https://github.com/AlexMan123456/eslint-plugin"}>
@@ -22,7 +22,7 @@ function AboutPage() {
         <InternalLink to="/eslint-plugin/installation">Installation instructions page</InternalLink>
         .
       </p>
-    </section>
+    </main>
   );
 }
 
