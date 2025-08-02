@@ -12,6 +12,7 @@ import ReactPlaygroundPage from "src/pages/components/ReactPlaygroundPage";
 import ScreenSizeContextPage from "src/pages/components/ScreenSizeContextPage";
 import InstallationPageComponents from "src/pages/components/getting-started/InstallationPage";
 import InstallationPageESLintPlugin from "src/pages/eslint-plugin/InstallationPage";
+import NoNamespaceImportsPage from "src/pages/eslint-plugin/NoNamespaceImportsPage";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
 
       <Route path="/eslint-plugin" element={<ESLintPluginMainPage />}>
         <Route path="installation" element={<InstallationPageESLintPlugin />} />
-        <Route path="no-namespace-imports" />
+        <Route path="no-namespace-imports" element={<NoNamespaceImportsPage />} />
         <Route path="no-relative-imports" />
       </Route>
     </Routes>
