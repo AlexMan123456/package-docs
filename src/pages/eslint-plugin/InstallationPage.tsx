@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 
 function InstallationPage() {
   return (
-    <section>
+    <main>
       <h1>Installation</h1>
       <p>
         To install this package locally to your project, run the following command in the root of
@@ -70,7 +70,7 @@ function InstallationPage() {
           export default prettierRules;
         `}
       </Markdown>
-    </section>
+    </main>
   );
 }
 
