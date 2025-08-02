@@ -49,13 +49,15 @@ function NoNamespaceImportsPage() {
                     // Allowed because you're using a barrel export
                     import { useState } from "react"
 
-                    // Allowed because you're using a default export (for the record, you should also never use a barrel export with Material UI unless you like big bundle sizes)
+                    // Allowed because you're using a default export
+                    // (for the record, you should also never use a barrel export with Material UI unless you like big bundle sizes)
                     import Button from "@mui/material/Button"
                     `}
         language="typescript"
         theme={dracula}
         showLineNumbers
       />
+      <h2>Setting Exceptions</h2>
       <Markdown>
         For some packages, it may be convenient to do a namespace import for them, so you may also
         want to set specific exceptions. If so, you can choose certain packages to allow to be
@@ -86,7 +88,8 @@ function NoNamespaceImportsPage() {
                     // Allowed because it's listed as an exception in the config
                     import * as z from "zod"
 
-                    // Still gives an error because we're still not allowing Material UI to give us big bundle sizes (but you do you if you're into that...)
+                    /* Still gives an error because we're still not allowing 
+                    Material UI to give us big bundle sizes (but you do you if you're into that...) */
                     import * as MUI from "@mui/material"
                     `}
         language="typescript"
