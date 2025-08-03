@@ -19,8 +19,8 @@ jobs:
         cache: "npm"
     - name: Setup GitHub user
       run: |
-        git config --global user.name "CI User"
-        git config --global user.email "ci@example.com"
+        git config --global user.name "AlexUpBot"
+        git config --global user.email "alexupbot@bot.com"
     - name: Create Git branch
       run: git checkout -b update-dependencies
     - name: Update dependencies
