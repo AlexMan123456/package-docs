@@ -25,8 +25,8 @@ jobs:
       run: |
         git config --global user.name "AlexUpBot"
         git config --global user.email "alexupbot@bot.com"
-    - name: Create Git branch
-      run: git checkout -b update-dependencies
+    - name: Create or switch to Git branch
+      run: git switch -C update-dependencies
     - name: Update dependencies
       run: npx npm-check-updates -u
     - name: Push changes
