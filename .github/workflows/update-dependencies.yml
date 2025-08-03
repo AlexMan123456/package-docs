@@ -24,7 +24,7 @@ jobs:
     - name: Create Git branch
       run: git checkout -b update-dependencies
     - name: Update dependencies
-      run: npm run update-dependencies
+      run: npx npm-check-updates -u
     - name: Push changes
       run: |
         git add .
