@@ -29,11 +29,16 @@ jobs:
       run: git switch -C update-dependencies
     - name: Update dependencies
       run: npx npm-check-updates -u
-    - name: Push changes
+    - name: Commit and push changes
       run: |
         git pull origin update-dependencies
         git add .
-        git commit -m "Update dependencies"
+        if ! git diff --cached --quiet; then
+          git commit -m "Update dependencies"
+          git push -u origin update-dependencies
+        else
+          echo "No dependency updates found."
+        fi
         git push origin update-dependencies
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
