@@ -38,6 +38,7 @@ jobs:
       uses: peter-evans/create-pull-request@v6
       with:
         branch: update-dependencies
+        base: main
         commit-message: Update dependencies
         title: "Update dependencies"
         body: "Automated dependency update"
