@@ -1,0 +1,35 @@
+name: Update Dependencies
+on: 
+  schedule:
+    - cron: 20 1 * * 0
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: "npm"
+    - name: Setup GitHub user
+      run: |
+        git config --global user.name "CI User"
+        git config --global user.email "ci@example.com"
+    - name: Create Git branch
+      run: git checkout -b update-dependencies
+    - name: Update dependencies
+      run: npm run update-dependencies
+    - name: Push changes
+      run: |
+        git add .
+        git commit -m "Update dependencies"
+        git push origin update-dependencies
+        
+        
