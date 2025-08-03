@@ -30,6 +30,7 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
       with:
+        token: ${{ secrets.PAT_GITHUB }}
         branch: update-dependencies
         base: main
         commit-message: Update dependencies
