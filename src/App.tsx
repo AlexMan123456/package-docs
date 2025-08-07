@@ -13,6 +13,7 @@ import ScreenSizeContextPage from "src/pages/components/ScreenSizeContextPage";
 import InstallationPageComponents from "src/pages/components/getting-started/InstallationPage";
 import InstallationPageESLintPlugin from "src/pages/eslint-plugin/InstallationPage";
 import NoNamespaceImportsPage from "src/pages/eslint-plugin/NoNamespaceImportsPage";
+import SwitchWithIconsPage from "src/pages/components/SwitchWithIconsPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="dark-mode-toggle" element={<DarkModeTogglePage />} />
         <Route path="icon-with-popover" element={<IconWithPopoverPage />} />
         <Route path="contexts/screen-size-context" element={<ScreenSizeContextPage />} />
+        <Route path="switch-with-icons" element={<SwitchWithIconsPage />} />
       </Route>
 
       <Route path="/eslint-plugin" element={<ESLintPluginMainPage />}>
