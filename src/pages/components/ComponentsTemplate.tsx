@@ -51,6 +51,10 @@ function ComponentsTemplate() {
               label: "IconWithPopover",
               to: "/components/icon-with-popover",
             },
+            {
+              label: "SwitchWithIcons",
+              to: "/components/switch-with-icons",
+            },
           ],
         },
         {
