@@ -31,10 +31,12 @@ function DropdownMenuPage() {
         code={`
                 <DropdownMenu>
                 {(closeMenu) => {
-                    return [
+                    return (
+                      <>
                         <MenuItem key="Item 1">Item 1</MenuItem>,
                         <MenuItem key="Item 2" onClick={() => {closeMenu()}}>Item 2</MenuItem>
-                    ]
+                      </>
+                    )
                 }}
                 </DropdownMenu>
                 `}
@@ -76,6 +78,16 @@ function DropdownMenuPage() {
         scope={{ DropdownMenu, MenuItem, Typography, useState, useEffect }}
         noInline
       />
+      <DropdownMenu>
+        {() => {
+          return (
+            <>
+              <MenuItem>Item 1</MenuItem>
+              <MenuItem>Item 2</MenuItem>
+            </>
+          );
+        }}
+      </DropdownMenu>
     </main>
   );
 }
