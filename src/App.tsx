@@ -1,19 +1,20 @@
 import { Route, Routes } from "react-router-dom";
-import ESLintPluginMainPage from "src/pages/eslint-plugin/ESLintPluginMainPage";
-import Homepage from "src/pages/Homepage";
-import Rickroll from "src/pages/Rickroll";
+
 import ComponentsTemplate from "src/pages/components/ComponentsTemplate";
 import DarkModeTogglePage from "src/pages/components/DarkModeTogglePage";
 import DropdownMenuPage from "src/pages/components/DropdownMenuPage";
 import ExternalLinkPage from "src/pages/components/ExternalLinkPage";
+import InstallationPageComponents from "src/pages/components/getting-started/InstallationPage";
 import IconWithPopoverPage from "src/pages/components/IconWithPopoverPage";
 import InternalLinkPage from "src/pages/components/InternalLinkPage";
 import ReactPlaygroundPage from "src/pages/components/ReactPlaygroundPage";
 import ScreenSizeContextPage from "src/pages/components/ScreenSizeContextPage";
-import InstallationPageComponents from "src/pages/components/getting-started/InstallationPage";
+import SwitchWithIconsPage from "src/pages/components/SwitchWithIconsPage";
+import ESLintPluginMainPage from "src/pages/eslint-plugin/ESLintPluginMainPage";
 import InstallationPageESLintPlugin from "src/pages/eslint-plugin/InstallationPage";
 import NoNamespaceImportsPage from "src/pages/eslint-plugin/NoNamespaceImportsPage";
-import SwitchWithIconsPage from "src/pages/components/SwitchWithIconsPage";
+import Homepage from "src/pages/Homepage";
+import Rickroll from "src/pages/Rickroll";
 
 function App() {
   return (

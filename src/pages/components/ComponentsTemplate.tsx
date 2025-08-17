@@ -1,9 +1,10 @@
 import { DarkModeToggle, NavigationDrawer } from "@alextheman/components";
-import IconButton from "@mui/material/IconButton";
-import { Link, Outlet, useLocation } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
-import AboutPage from "src/pages/components/getting-started/AboutPage";
+import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
+import { Link, Outlet, useLocation } from "react-router-dom";
+
+import AboutPage from "src/pages/components/getting-started/AboutPage";
 
 function ComponentsTemplate() {
   const location = useLocation();

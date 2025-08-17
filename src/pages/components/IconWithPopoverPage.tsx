@@ -1,7 +1,7 @@
 import { IconWithPopover, PopoverText, ReactPlayground } from "@alextheman/components";
+import Visibility from "@mui/icons-material/Visibility";
 import Typography from "@mui/material/Typography";
 import Markdown from "react-markdown";
-import Visibility from "@mui/icons-material/Visibility";
 
 function IconWithPopoverPage() {
   return (

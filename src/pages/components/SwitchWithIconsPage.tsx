@@ -1,8 +1,8 @@
-import ArrowRight from "@mui/icons-material/ArrowRight";
-import ArrowLeft from "@mui/icons-material/ArrowLeft";
 import { ReactPlayground, SwitchWithIcons } from "@alextheman/components";
-import Markdown from "react-markdown";
+import ArrowLeft from "@mui/icons-material/ArrowLeft";
+import ArrowRight from "@mui/icons-material/ArrowRight";
 import Switch from "@mui/material/Switch";
+import Markdown from "react-markdown";
 
 function SwitchWithIconsPage() {
   return (

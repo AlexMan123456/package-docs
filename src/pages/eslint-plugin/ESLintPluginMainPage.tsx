@@ -1,9 +1,10 @@
 import { DarkModeToggle, InternalLink, NavigationDrawer } from "@alextheman/components";
+import HomeIcon from "@mui/icons-material/Home";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
-import HomeIcon from "@mui/icons-material/Home";
-import AboutPage from "src/pages/eslint-plugin/AboutPage";
 import { Outlet, useLocation } from "react-router-dom";
+
+import AboutPage from "src/pages/eslint-plugin/AboutPage";
 
 function ESLintPluginMainPage() {
   const location = useLocation();
