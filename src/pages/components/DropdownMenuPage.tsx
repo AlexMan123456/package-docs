@@ -78,16 +78,6 @@ function DropdownMenuPage() {
         scope={{ DropdownMenu, MenuItem, Typography, useState, useEffect }}
         noInline
       />
-      <DropdownMenu>
-        {() => {
-          return (
-            <>
-              <MenuItem>Item 1</MenuItem>
-              <MenuItem>Item 2</MenuItem>
-            </>
-          );
-        }}
-      </DropdownMenu>
     </main>
   );
 }
