@@ -10,7 +10,7 @@
     "lint": "ESLINT_MODE=lint eslint 'src/**/*.{ts,tsx}' && prettier --check --parser typescript 'src/**/*.{ts,tsx}'",
     "preview": "vite preview",
     "prepare": "husky",
-    "update-dependencies": "npx npm-check-updates -u && npm install"
+    "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --"
   },
   "dependencies": {
     "@alextheman/components": "^3.5.3",
