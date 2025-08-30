@@ -11,6 +11,8 @@ permissions:
 jobs:
   update-dependencies:
     runs-on: ubuntu-latest
+    env:
+      HUSKY: 0
     
     strategy:
       matrix:
@@ -27,8 +29,6 @@ jobs:
       run: |
         git config --global user.name "AlexUpBot"
         git config --global user.email "alexupbot@bot.com"
-    - name: Disable pre-commit hooks
-      run: export HUSKY=0
     - name: Update dependencies
       run: |
         cp package-lock.json package-lock-backup.json
