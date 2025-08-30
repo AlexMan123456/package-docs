@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "format": "prettier --write --parser typescript 'src/**/*.{ts,tsx}' && ESLINT_MODE=fix eslint --fix 'src/**/*.{ts,tsx}'",
-    "lint": "ESLINT_MODE=lint eslint 'src/**/*.{ts,tsx}' && prettier --check --parser typescript 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write --parser typescript 'src/**/*.{ts,tsx}' && eslint --fix --suppress-all 'src/**/*.{ts,tsx}' && rm -f eslint-suppressions.json",
+    "lint": "tsc --noEmit && eslint 'src/**/*.{ts,tsx}' && prettier --check --parser typescript 'src/**/*.{ts,tsx}'",
     "preview": "vite preview",
     "prepare": "husky",
     "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --"
