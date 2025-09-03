@@ -10,7 +10,9 @@
     "lint": "tsc --noEmit && eslint 'src/**/*.{ts,tsx}' && prettier --check --parser typescript 'src/**/*.{ts,tsx}'",
     "preview": "vite preview",
     "prepare": "husky",
-    "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --"
+    "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --",
+    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz",
+    "use-live-components": "npm uninstall @alextheman/components && npm install @alextheman/components"
   },
   "dependencies": {
     "@alextheman/components": "^3.5.3",
