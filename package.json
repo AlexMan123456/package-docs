@@ -1,18 +1,19 @@
 {
   "name": "package-docs",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "Documentation of all my created packages",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
-    "format": "prettier --write --parser typescript 'src/**/*.{ts,tsx}' && eslint --fix --suppress-all 'src/**/*.{ts,tsx}' && rm -f eslint-suppressions.json",
-    "lint": "tsc --noEmit && eslint 'src/**/*.{ts,tsx}' && prettier --check --parser typescript 'src/**/*.{ts,tsx}'",
-    "preview": "vite preview",
+    "dev": "vite",
+    "format": "prettier --write --parser typescript \"src/**/*.{ts,tsx}\" && eslint --fix --suppress-all \"src/**/*.{ts,tsx}\" \"package.json\" && rm -f eslint-suppressions.json",
+    "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" \"package.json\" && prettier --check --parser typescript \"src/**/*.{ts,tsx}\"",
     "prepare": "husky",
+    "preview": "vite preview",
     "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --",
-    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz",
-    "use-live-components": "npm uninstall @alextheman/components && npm install @alextheman/components"
+    "use-live-components": "npm uninstall @alextheman/components && npm install @alextheman/components",
+    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz"
   },
   "dependencies": {
     "@alextheman/components": "^3.5.3",
@@ -29,7 +30,7 @@
     "react-router-dom": "^7.8.2"
   },
   "devDependencies": {
-    "@alextheman/eslint-plugin": "^1.8.2",
+    "@alextheman/eslint-plugin": "^1.13.0",
     "@eslint/js": "^9.34.0",
     "@types/common-tags": "^1.8.4",
     "@types/node": "^24.3.0",
