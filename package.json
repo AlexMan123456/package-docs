@@ -13,7 +13,9 @@
     "preview": "vite preview",
     "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --",
     "use-live-components": "npm uninstall @alextheman/components && npm install @alextheman/components",
-    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz"
+    "use-live-eslint-plugin": "npm uninstall @alextheman/eslint-plugin && npm install @alextheman/eslint-plugin",
+    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz",
+    "use-local-eslint-plugin": "npm --prefix ../eslint-plugin run create-local-package && npm uninstall @alextheman/eslint-plugin && npm install ../eslint-plugin/alextheman-eslint-plugin-*.tgz"
   },
   "dependencies": {
     "@alextheman/components": "^3.5.3",
