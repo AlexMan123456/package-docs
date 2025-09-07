@@ -13,7 +13,9 @@
     "preview": "vite preview",
     "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --",
     "use-live-components": "npm uninstall @alextheman/components && npm install @alextheman/components",
-    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz"
+    "use-live-eslint-plugin": "npm uninstall @alextheman/eslint-plugin && npm install --save-dev @alextheman/eslint-plugin",
+    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz",
+    "use-local-eslint-plugin": "npm --prefix ../eslint-plugin run create-local-package && npm uninstall @alextheman/eslint-plugin && npm install --save-dev ../eslint-plugin/alextheman-eslint-plugin-*.tgz"
   },
   "dependencies": {
     "@alextheman/components": "^3.5.3",
@@ -30,7 +32,7 @@
     "react-router-dom": "^7.8.2"
   },
   "devDependencies": {
-    "@alextheman/eslint-plugin": "^1.13.0",
+    "@alextheman/eslint-plugin": "^1.13.7",
     "@eslint/js": "^9.35.0",
     "@types/common-tags": "^1.8.4",
     "@types/node": "^24.3.1",
