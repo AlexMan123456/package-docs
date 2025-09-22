@@ -1,4 +1,4 @@
-import { ReactPlayground, ScreenSizeContext, ScreenSizeProvider } from "@alextheman/components";
+import { ReactPlayground, ScreenSizeProvider, useScreenSize } from "@alextheman/components";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import { useContext } from "react";
@@ -27,7 +27,7 @@ function ScreenSizeContextPage() {
       <ReactPlayground
         code={`
                     function ScreenSizeTest(){
-                        const { windowWidth, windowHeight, isLargeScreen } = useContext(ScreenSizeContext)
+                        const { windowWidth, windowHeight, isLargeScreen } = useScreenSize()
                         return (
                             <List>
                                 <ListItemText primary={\`windowWidth: \${windowWidth}px\`}/>
@@ -44,7 +44,7 @@ function ScreenSizeContextPage() {
                     `}
         scope={{
           useContext,
-          ScreenSizeContext,
+          useScreenSize,
           ScreenSizeProvider,
           List,
           ListItemText,
@@ -55,7 +55,7 @@ function ScreenSizeContextPage() {
       <ReactPlayground
         code={`
                     function ScreenSizeTest(){
-                        const { windowWidth, windowHeight, isLargeScreen } = useContext(ScreenSizeContext)
+                        const { windowWidth, windowHeight, isLargeScreen } = useScreenSize()
                         return (
                             <List>
                                 <ListItemText primary={\`windowWidth: \${window.innerWidth}px\`}/>
@@ -72,7 +72,7 @@ function ScreenSizeContextPage() {
                     `}
         scope={{
           useContext,
-          ScreenSizeContext,
+          useScreenSize,
           ScreenSizeProvider,
           List,
           ListItemText,
@@ -94,7 +94,7 @@ function ScreenSizeContextPage() {
       <ReactPlayground
         code={`
                     function ScreenSizeTest(){
-                        const { windowWidth, windowHeight, isLargeScreen } = useContext(ScreenSizeContext)
+                        const { windowWidth, windowHeight, isLargeScreen } = useScreenSize()
                         return (
                             <List>
                                 <ListItemText primary={\`windowWidth: \${window.innerWidth}px\`}/>
@@ -111,7 +111,7 @@ function ScreenSizeContextPage() {
                     `}
         scope={{
           useContext,
-          ScreenSizeContext,
+          useScreenSize,
           ScreenSizeProvider,
           List,
           ListItemText,
