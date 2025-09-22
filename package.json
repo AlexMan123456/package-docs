@@ -1,11 +1,14 @@
 {
   "name": "package-docs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Documentation of all my created packages",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
+    "change-major": "npm version major -m \"Change version number to v%s\"",
+    "change-minor": "npm version minor -m \"Change version number to v%s\"",
+    "change-patch": "npm version patch -m \"Change version number to v%s\"",
     "dev": "vite",
     "format": "prettier --write --parser typescript \"src/**/*.{ts,tsx}\" && eslint --fix --suppress-all \"src/**/*.{ts,tsx}\" \"package.json\" && rm -f eslint-suppressions.json",
     "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" \"package.json\" && npx alex-c-line check-for-file-dependencies && prettier --check --parser typescript \"src/**/*.{ts,tsx}\"",
@@ -18,7 +21,7 @@
     "use-local-eslint-plugin": "npm --prefix ../eslint-plugin run create-local-package && npm uninstall @alextheman/eslint-plugin && npm install --save-dev ../eslint-plugin/alextheman-eslint-plugin-*.tgz"
   },
   "dependencies": {
-    "@alextheman/components": "^4.0.1",
+    "@alextheman/components": "^4.1.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.2",
