@@ -1,6 +1,6 @@
 {
   "name": "package-docs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Documentation of all my created packages",
   "type": "module",
