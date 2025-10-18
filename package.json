@@ -19,7 +19,7 @@
     "lint-eslint": "eslint \"src/**/*.{ts,tsx}\" \"package.json\"",
     "lint-file-dependencies": "npx alex-c-line check-for-file-dependencies",
     "lint-prettier": "npm run lint-prettier-typescript && npm run lint-prettier-javascript",
-    "lint-prettier-javascript": "prettier --check --parser typescript \"./**/*.js\"",
+    "lint-prettier-javascript": "prettier --check \"./**/*.js\"",
     "lint-prettier-typescript": "prettier --check --parser typescript \"./**/*.{ts,tsx}\"",
     "lint-tsc": "tsc --noEmit",
     "prepare": "husky",
