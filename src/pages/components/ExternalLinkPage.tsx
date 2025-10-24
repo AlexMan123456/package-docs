@@ -39,7 +39,11 @@ function ExternalLinkPage() {
       <Markdown
         components={{
           a: ({ href, children }) => {
-            return <InternalLink to={href ?? ""}>{children}</InternalLink>;
+            return (
+              <InternalLink to={(href as `/components/internal-link`) ?? ""}>
+                {children}
+              </InternalLink>
+            );
           },
         }}
       >
