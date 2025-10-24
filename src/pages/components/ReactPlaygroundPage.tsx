@@ -20,7 +20,11 @@ function ReactPlaygroundPage() {
       <Markdown
         components={{
           a: ({ href, children }) => {
-            return <ExternalLink href={href ?? ""}>{children}</ExternalLink>;
+            return (
+              <ExternalLink href={(href as `https://nearform.com/open-source/react-live/`) ?? ""}>
+                {children}
+              </ExternalLink>
+            );
           },
         }}
       >
