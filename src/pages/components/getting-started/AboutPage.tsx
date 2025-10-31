@@ -5,7 +5,7 @@ function AboutPage() {
     <section>
       <h1>
         About{" "}
-        <ExternalLink href={"https://github.com/AlexMan123456/components"}>
+        <ExternalLink href="https://github.com/AlexMan123456/components">
           @alextheman/components
         </ExternalLink>
       </h1>
