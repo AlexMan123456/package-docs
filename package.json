@@ -1,6 +1,6 @@
 {
   "name": "package-docs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "Documentation of all my created packages",
   "type": "module",
@@ -31,7 +31,7 @@
     "use-local-eslint-plugin": "npm --prefix ../eslint-plugin run create-local-package && npm uninstall @alextheman/eslint-plugin && npm install --save-dev ../eslint-plugin/alextheman-eslint-plugin-*.tgz"
   },
   "dependencies": {
-    "@alextheman/components": "^5.0.1",
+    "@alextheman/components": "^5.3.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.4",
@@ -42,17 +42,17 @@
     "react-dom": "^19.2.0",
     "react-live": "^4.1.8",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.9.4"
+    "react-router-dom": "^7.9.5"
   },
   "devDependencies": {
-    "@alextheman/eslint-plugin": "^2.2.2",
-    "@eslint/js": "^9.38.0",
+    "@alextheman/eslint-plugin": "^2.4.1",
+    "@eslint/js": "^9.39.0",
     "@types/common-tags": "^1.8.4",
-    "@types/node": "^24.9.1",
+    "@types/node": "^24.9.2",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.0",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.0",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",

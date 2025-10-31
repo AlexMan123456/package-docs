@@ -11,7 +11,7 @@ function DarkModeTogglePage() {
         the colour scheme of the page.
       </Markdown>
       <br />
-      <ReactPlayground code={"<DarkModeToggle />"} scope={{ DarkModeToggle }} />
+      <ReactPlayground code="<DarkModeToggle />" scope={{ DarkModeToggle }} />
       <br />
       <Markdown>
         Please note that in order to use this component, it must be wrapped inside a `ModeProvider`,

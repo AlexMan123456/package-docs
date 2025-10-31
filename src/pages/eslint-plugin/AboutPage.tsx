@@ -5,7 +5,7 @@ function AboutPage() {
     <main>
       <h1>
         About{" "}
-        <ExternalLink href={"https://github.com/AlexMan123456/eslint-plugin"}>
+        <ExternalLink href="https://github.com/AlexMan123456/eslint-plugin">
           @alextheman/eslint-plugin
         </ExternalLink>
       </h1>

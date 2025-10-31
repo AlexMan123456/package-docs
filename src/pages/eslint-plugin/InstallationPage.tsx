@@ -9,7 +9,7 @@ function InstallationPage() {
         To install this package locally to your project, run the following command in the root of
         your project:
       </p>
-      <Markdown>{"`npm install @alextheman/eslint-plugin`"}</Markdown>
+      <Markdown>`npm install @alextheman/eslint-plugin`</Markdown>
       <p>This will install the package along with any peer dependencies needed.</p>
       <h2>Troubleshooting - Regarding the Deprecated Config Packages</h2>
       <Markdown>
@@ -24,15 +24,14 @@ function InstallationPage() {
         uninstall the config packages along with the plugin with
       </Markdown>
       <Markdown>
-        {
-          "``npm uninstall @alextheman/eslint-config-typescript-base @alextheman/eslint-config-typescript-react-base @alextheman/eslint-plugin``"
-        }
+        ``npm uninstall @alextheman/eslint-config-typescript-base
+        @alextheman/eslint-config-typescript-react-base @alextheman/eslint-plugin``
       </Markdown>
       <Markdown>If you need to add the `--legacy-peer-deps` flag, please do so as well.</Markdown>
       <Markdown>After that, update all your dependencies by running</Markdown>
-      <Markdown>{"`npx npm-check-updates -u && npm install`"}</Markdown>
+      <Markdown>`npx npm-check-updates -u && npm install`</Markdown>
       <Markdown>Finally, run</Markdown>
-      <Markdown>{"`npm install @alextheman/eslint-plugin`"}</Markdown>
+      <Markdown>`npm install @alextheman/eslint-plugin`</Markdown>
       <Markdown>And that should resolve all the version conflicts.</Markdown>
       <h2>Using my ESLint Config</h2>
       <Markdown>
