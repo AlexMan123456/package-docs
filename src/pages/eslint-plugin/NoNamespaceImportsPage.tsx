@@ -1,5 +1,7 @@
-import { CopyBlock, dracula } from "react-code-blocks";
+import { stripIndent } from "common-tags";
 import Markdown from "react-markdown";
+
+import CodeExample from "src/components/CodeExample";
 
 function NoNamespaceImportsPage() {
   return (
@@ -11,28 +13,26 @@ function NoNamespaceImportsPage() {
         package, rather than just importing everything.
       </Markdown>
       <Markdown>To use this in your own projects, add this to your ESLint config:</Markdown>
-      <CopyBlock
-        text={`
+      <CodeExample
+        code={stripIndent`
                     import alexPlugin from "@alextheman/eslint-plugin";
 
                     export default [
-                        {
-                            plugins: {
-                                "@alextheman": alexPlugin
-                            },
-                            rules: {
-                                "@alextheman/no-namespace-imports": "error"
-                            }
-                        }
-                    ]
+                      {
+                        plugins: {
+                          "@alextheman": alexPlugin,
+                        },
+                        rules: {
+                          "@alextheman/no-namespace-imports": "error",
+                        },
+                      },
+                    ];
                     `}
-        language="javascript"
-        theme={dracula}
-        showLineNumbers
+        language="typescript"
       />
       <Markdown>Under this rule, the following examples should give an error:</Markdown>
-      <CopyBlock
-        text={`
+      <CodeExample
+        code={stripIndent`
                     // Gives an error because you used import *
                     import * as React from "react"
 
@@ -40,12 +40,10 @@ function NoNamespaceImportsPage() {
                     import * as MUI from "@mui/material"
                     `}
         language="typescript"
-        theme={dracula}
-        showLineNumbers
       />
       <Markdown>Whereas the following examples are allowed:</Markdown>
-      <CopyBlock
-        text={`
+      <CodeExample
+        code={stripIndent`
                     // Allowed because you're using a barrel export
                     import { useState } from "react"
 
@@ -54,8 +52,6 @@ function NoNamespaceImportsPage() {
                     import Button from "@mui/material/Button"
                     `}
         language="typescript"
-        theme={dracula}
-        showLineNumbers
       />
       <h2>Setting Exceptions</h2>
       <Markdown>
@@ -63,38 +59,34 @@ function NoNamespaceImportsPage() {
         want to set specific exceptions. If so, you can choose certain packages to allow to be
         imported this way by configuring them in the config:
       </Markdown>
-      <CopyBlock
-        text={`
+      <CodeExample
+        code={stripIndent`
                     import alexPlugin from "@alextheman/eslint-plugin";
 
                     export default [
-                        {
-                            plugins: {
-                                "@alextheman": alexPlugin
-                            },
-                            rules: {
-                                "@alextheman/no-namespace-imports": ["error", { allow: ["zod"] }]
-                            }
-                        }
-                    ]
+                      {
+                        plugins: {
+                          "@alextheman": alexPlugin,
+                        },
+                        rules: {
+                          "@alextheman/no-namespace-imports": ["error", { allow: ["zod"] }],
+                        },
+                      },
+                    ];
                     `}
-        language="javascript"
-        theme={dracula}
-        showLineNumbers
+        language="typescript"
       />
       <Markdown>And so, under this configuration, the following is also now allowed</Markdown>
-      <CopyBlock
-        text={`
+      <CodeExample
+        code={stripIndent`
                     // Allowed because it's listed as an exception in the config
                     import * as z from "zod"
 
-                    /* Still gives an error because we're still not allowing 
-                    Material UI to give us big bundle sizes (but you do you if you're into that...) */
+                    // Still gives an error because we're still not allowing 
+                    // Material UI to give us big bundle sizes (but you do you if you're into that...)
                     import * as MUI from "@mui/material"
                     `}
         language="typescript"
-        theme={dracula}
-        showLineNumbers
       />
     </main>
   );
