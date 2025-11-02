@@ -11,7 +11,6 @@ function Homepage() {
         <ListItemInternalLink to="/components">@alextheman/components</ListItemInternalLink>
         <ListItemButton>@alextheman/utility</ListItemButton>
         <ListItemInternalLink to="/eslint-plugin">@alextheman/eslint-plugin</ListItemInternalLink>
-        <ListItemButton>Dropcore</ListItemButton>
       </List>
     </section>
   );
