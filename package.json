@@ -31,7 +31,7 @@
     "use-local-eslint-plugin": "npm --prefix ../eslint-plugin run create-local-package && npm uninstall @alextheman/eslint-plugin && npm install --save-dev ../eslint-plugin/alextheman-eslint-plugin-*.tgz"
   },
   "dependencies": {
-    "@alextheman/components": "^5.5.1",
+    "@alextheman/components": "^5.5.2",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.5",
@@ -43,22 +43,20 @@
     "react-dom": "^19.2.0",
     "react-live": "^4.1.8",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.6"
   },
   "devDependencies": {
-    "@alextheman/eslint-plugin": "^2.5.0",
-    "@eslint/js": "^9.39.1",
+    "@alextheman/eslint-plugin": "^3.0.1",
     "@types/common-tags": "^1.8.4",
-    "@types/node": "^24.10.0",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react": "^5.1.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.4",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
     "eslint": "^9.39.1",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.46.3",
     "vite": "^7.2.2",
     "vite-plugin-dts": "^4.5.4"
   }
