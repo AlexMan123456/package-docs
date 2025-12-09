@@ -6,29 +6,29 @@
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
-    "change-major": "npm version major -m \"Change version number to v%s\"",
-    "change-minor": "npm version minor -m \"Change version number to v%s\"",
-    "change-patch": "npm version patch -m \"Change version number to v%s\"",
+    "change-major": "pnpm version major -m \"Change version number to v%s\"",
+    "change-minor": "pnpm version minor -m \"Change version number to v%s\"",
+    "change-patch": "pnpm version patch -m \"Change version number to v%s\"",
     "dev": "vite",
-    "format": "npm run format-prettier && npm run format-eslint",
+    "format": "pnpm run format-prettier && pnpm run format-eslint",
     "format-eslint": "eslint --fix --suppress-all \"src/**/*.{ts,tsx}\" \"package.json\" && rm -f eslint-suppressions.json",
-    "format-prettier": "npm run format-prettier-typescript && npm run format-prettier-javascript",
+    "format-prettier": "pnpm run format-prettier-typescript && pnpm run format-prettier-javascript",
     "format-prettier-javascript": "prettier --write \"./**/*.js\"",
     "format-prettier-typescript": "prettier --write --parser typescript \"./**/*.{ts,tsx}\"",
-    "lint": "npm run lint-tsc && npm run lint-eslint && npm run lint-file-dependencies && npm run lint-prettier",
+    "lint": "pnpm run lint-tsc && pnpm run lint-eslint && pnpm run lint-file-dependencies && pnpm run lint-prettier",
     "lint-eslint": "eslint \"src/**/*.{ts,tsx}\" \"package.json\"",
-    "lint-file-dependencies": "npx alex-c-line check-for-file-dependencies",
-    "lint-prettier": "npm run lint-prettier-typescript && npm run lint-prettier-javascript",
+    "lint-file-dependencies": "alex-c-line check-for-file-dependencies",
+    "lint-prettier": "pnpm run lint-prettier-typescript && pnpm run lint-prettier-javascript",
     "lint-prettier-javascript": "prettier --check \"./**/*.js\"",
     "lint-prettier-typescript": "prettier --check --parser typescript \"./**/*.{ts,tsx}\"",
     "lint-tsc": "tsc --noEmit",
     "prepare": "husky",
     "preview": "vite preview",
-    "update-dependencies": "bash -c 'npx npm-check-updates -u \"$@\" && npm install' --",
-    "use-live-components": "npm uninstall @alextheman/components && npm install @alextheman/components",
-    "use-live-eslint-plugin": "npm uninstall @alextheman/eslint-plugin && npm install --save-dev @alextheman/eslint-plugin",
-    "use-local-components": "npm --prefix ../components run create-local-package && npm uninstall @alextheman/components && npm install ../components/alextheman-components-*.tgz",
-    "use-local-eslint-plugin": "npm --prefix ../eslint-plugin run create-local-package && npm uninstall @alextheman/eslint-plugin && npm install --save-dev ../eslint-plugin/alextheman-eslint-plugin-*.tgz"
+    "update-dependencies": "pnpm update --latest && pnpm update",
+    "use-live-components": "pnpm uninstall @alextheman/components && pnpm install @alextheman/components",
+    "use-live-eslint-plugin": "pnpm uninstall @alextheman/eslint-plugin && pnpm install --save-dev @alextheman/eslint-plugin",
+    "use-local-components": "pnpm --prefix ../components run create-local-package && pnpm uninstall @alextheman/components && pnpm install ../components/alextheman-components-*.tgz",
+    "use-local-eslint-plugin": "pnpm --prefix ../eslint-plugin run create-local-package && pnpm uninstall @alextheman/eslint-plugin && pnpm install --save-dev ../eslint-plugin/alextheman-eslint-plugin-*.tgz"
   },
   "dependencies": {
     "@alextheman/components": "^5.8.1",
@@ -52,12 +52,20 @@
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "alex-c-line": "^1.7.1",
     "eslint": "^9.39.1",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
-    "typescript": "~5.9.3",
-    "vite": "^7.2.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2",
     "vite-plugin-dts": "^4.5.4"
+  },
+  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "unrs-resolver"
+    ]
   }
 }
